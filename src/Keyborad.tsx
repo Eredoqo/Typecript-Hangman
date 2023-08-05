@@ -55,7 +55,7 @@ export function Keyboard({
         const isInActive = inactiveLetters?.includes(key);
         return (
           <button
-            onClick={() => addGuessedLetter}
+            onClick={() => addGuessedLetter(key)}
             className={`${styles.btn} ${isActive ? styles.active : ""} ${
               isInActive ? styles.inactive : ""
             }`}
